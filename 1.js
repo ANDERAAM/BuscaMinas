@@ -6,23 +6,22 @@ dificil 32 x 32
 */
 
 var Nombre = document.getElementById("Nombre").value;
-alert(Nombre);
 var Op1    = document.getElementById("Facil");
 var Op2    = document.getElementById("Medio");
 var Op3    = document.getElementById("Dificil");
 
-
+//alert("Usted Seleccionado el Nivel Facil : "+Op1.value);
  if (Op1.checked==true)
-   alert("Usted Seleccionado el Nivel Facil : "+Op1.value);
-   document.getElementById("Menu").innerHTML= "";
+  alert("Usted Seleccionado el Nivel Facil : "+Op1.value);
  else if (Op2.checked==true)
-   alert("Usted Seleccionado el nivel Medio : "+Op2.value);
-   document.getElementById("Menu").innerHTML= "";
+   alert("Usted Seleccionado el nivel Medio  "+Op2.value);
  else if (Op3.checked==true)
    alert("Usted Seleccionado el nivel Dificil : "+Op3.value);
-   document.getElementById("Menu").innerHTML= "";
+
+   document.getElementById("Menu").innerHTML="";
 
 }
+
 
 
 /*function GenerarT(){
