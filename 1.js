@@ -10,7 +10,6 @@ var Op1    = document.getElementById("Facil");
 var Op2    = document.getElementById("Medio");
 var Op3    = document.getElementById("Dificil");
 
-//alert("Usted Seleccionado el Nivel Facil : "+Op1.value);
  if (Op1.checked==true)
   alert("Usted Seleccionado el Nivel Facil : "+Op1.value);
  else if (Op2.checked==true)
@@ -18,25 +17,25 @@ var Op3    = document.getElementById("Dificil");
  else if (Op3.checked==true)
    alert("Usted Seleccionado el nivel Dificil : "+Op3.value);
 
-   document.getElementById("Menu").innerHTML="";
+   GenerarT()
+}
 
+function GenerarT(){
+
+    for(i=0;i<8;i++){
+    for(j=0;j<8;j++){
+    var div = document.createElement("div");
+    div.id =i+""+j;
+    }
+    }
+
+
+    document.getElementById("Resultado").innerHTML=div;
+    alert("SI ESTA!!!")
 }
 
 
 
-/*function GenerarT(){
-  var tabla="<table border=\"0\">";
-  for(i=0;i<8;i++){
-  tabla+="<tr>";
-  for(j=0;j<8;j++){
-  tabla+="<td>"+"<input type=\"text\" size=\"1\">"+ "</td>";
-  }
-  tabla+="</tr>";
-  }
-  tabla+="</table>";
-  document.getElementById("resultado").innerHTML=tabla;
-}
-*/
 
 
 
