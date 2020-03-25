@@ -1,7 +1,7 @@
 
 
-function GenerarT(){
-  var x = 8 ;
+function GenerarF(){
+  alert("Usted Seleccionado el Nivel Facil : ");
   var tabla="<table border=\"0\">";
   for(i=0;i<8;i++){
   tabla+="<tr>";
@@ -12,8 +12,9 @@ function GenerarT(){
   }
   tabla+="</table>";
   document.getElementById("Resultado").innerHTML=tabla;
-  alert("Usted Seleccionado el Nivel Facil : ");
+  
 };
+
 
 
 
@@ -26,7 +27,7 @@ var Op3    = document.getElementById("Dificil");
 
 
  if (Op1.checked==true)
-  GenerarT();
+   GenerarF();
  else if (Op2.checked==true)
    alert("Usted Seleccionado el nivel Medio  "+Op2.value);
  else if (Op3.checked==true)
